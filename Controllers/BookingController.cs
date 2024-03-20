@@ -20,6 +20,7 @@ namespace BookingApp.Controllers
 
         // GET: api/Booking
         [HttpGet]
+        
         public async Task<ActionResult<IEnumerable<Booking>>> GetBookings()
         {
             return await _context.Bookings.ToListAsync();
@@ -27,6 +28,7 @@ namespace BookingApp.Controllers
 
         // GET: api/Booking/5
         [HttpGet("{id}")]
+        
         public async Task<ActionResult<Booking>> GetBooking(int id)
         {
             var booking = await _context.Bookings.FindAsync(id);

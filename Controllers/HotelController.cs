@@ -9,6 +9,7 @@ namespace BookingApp.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+     
     public class HotelController : ControllerBase
     {
         private readonly BookingContext _context;
